@@ -40,7 +40,7 @@ export class Routes {
             controller.list(req, res);
         });
 
-        app.route('/movie/:id').get(async (req: Request, res: Response) => {
+        app.route('/movie/:id').put(async (req: Request, res: Response) => {
             const controller = new MovieController();
             controller.update(req, res);
         });
